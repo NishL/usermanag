@@ -8,7 +8,7 @@
 </head>
 <body>
 
-		<% [:notice, :error, :alert, :success].each do |level| %>
+	<% [:notice, :error, :alert, :success].each do |level| %>
 	  <% unless flash[level].blank? %>
 	    <div class="<%= flash_class(level) %>">
 	      <%= content_tag :span, flash[level] %>
